@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 namespace StructureConverterFromWindchillToExcel
 {
     #region Общие перечисления
+    public enum TypeProduct { DETAIL , ASM, STANDARD_PRODUCT, OTHER_PRODUCT, MATERIAL } // тип продукта
     public enum Section { ASSEMBLY_UNITS, DETAILS, STANDARD_PRODUCTS, OTHER_PRODUCTS, MATERIALS, NULL } // разделы спецификации
 
     public enum CodeDocument { SB } // коды документов

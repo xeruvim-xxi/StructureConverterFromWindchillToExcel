@@ -3,14 +3,14 @@
     partial class MainForm
     {
         /// <summary>
-        /// Обязательная переменная конструктора.
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// Освободить все используемые ресурсы.
+        /// Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">истинно, если управляемый ресурс должен быть удален; иначе ложно.</param>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,117 +20,171 @@
             base.Dispose(disposing);
         }
 
-        #region Код, автоматически созданный конструктором форм Windows
+        #region Windows Form Designer generated code
 
         /// <summary>
-        /// Требуемый метод для поддержки конструктора — не изменяйте 
-        /// содержимое этого метода с помощью редактора кода.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtPathFileStructureWindchill = new System.Windows.Forms.TextBox();
-            this.bDialogSelectPathFileStructureWindchill = new System.Windows.Forms.Button();
-            this.oFDPathFile = new System.Windows.Forms.OpenFileDialog();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtPathFilePickingList = new System.Windows.Forms.TextBox();
-            this.bDialogSelectPathFilePickingList = new System.Windows.Forms.Button();
-            this.bConvert = new System.Windows.Forms.Button();
-            this.lblEx = new System.Windows.Forms.Label();
+            this.MainMenu = new System.Windows.Forms.MenuStrip();
+            this.TS1_MenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.TS_CreateProject_MenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.TS_OpenProject_MenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.TS_Quit_MenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.MainContainer = new System.Windows.Forms.SplitContainer();
+            this.TreeProduct = new System.Windows.Forms.TreeView();
+            this.LV_Product = new System.Windows.Forms.ListView();
+            this.CH_Section = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.CH_Position = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.CH_Design = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.CH_Name = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.CH_Quantity = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.CH_Note = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.MainMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.MainContainer)).BeginInit();
+            this.MainContainer.Panel1.SuspendLayout();
+            this.MainContainer.Panel2.SuspendLayout();
+            this.MainContainer.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
+            // MainMenu
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(503, 191);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(238, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Выберите файл структуры из Windchill (*.xlsx):";
+            this.MainMenu.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.MainMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TS1_MenuItem});
+            this.MainMenu.Location = new System.Drawing.Point(0, 0);
+            this.MainMenu.Name = "MainMenu";
+            this.MainMenu.Size = new System.Drawing.Size(1604, 24);
+            this.MainMenu.TabIndex = 0;
+            this.MainMenu.Text = "menuStrip1";
             // 
-            // txtPathFileStructureWindchill
+            // TS1_MenuItem
             // 
-            this.txtPathFileStructureWindchill.Location = new System.Drawing.Point(502, 211);
-            this.txtPathFileStructureWindchill.Name = "txtPathFileStructureWindchill";
-            this.txtPathFileStructureWindchill.ReadOnly = true;
-            this.txtPathFileStructureWindchill.Size = new System.Drawing.Size(400, 20);
-            this.txtPathFileStructureWindchill.TabIndex = 1;
+            this.TS1_MenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TS_CreateProject_MenuItem,
+            this.TS_OpenProject_MenuItem,
+            this.toolStripSeparator1,
+            this.TS_Quit_MenuItem});
+            this.TS1_MenuItem.Name = "TS1_MenuItem";
+            this.TS1_MenuItem.Size = new System.Drawing.Size(63, 20);
+            this.TS1_MenuItem.Text = "Главная";
             // 
-            // bDialogSelectPathFileStructureWindchill
+            // TS_CreateProject_MenuItem
             // 
-            this.bDialogSelectPathFileStructureWindchill.Location = new System.Drawing.Point(912, 209);
-            this.bDialogSelectPathFileStructureWindchill.Name = "bDialogSelectPathFileStructureWindchill";
-            this.bDialogSelectPathFileStructureWindchill.Size = new System.Drawing.Size(100, 24);
-            this.bDialogSelectPathFileStructureWindchill.TabIndex = 2;
-            this.bDialogSelectPathFileStructureWindchill.Text = "Выбрать...";
-            this.bDialogSelectPathFileStructureWindchill.UseVisualStyleBackColor = true;
-            this.bDialogSelectPathFileStructureWindchill.Click += new System.EventHandler(this.bDialogSelectPathFileStructureWindchill_Click);
+            this.TS_CreateProject_MenuItem.Name = "TS_CreateProject_MenuItem";
+            this.TS_CreateProject_MenuItem.Size = new System.Drawing.Size(162, 22);
+            this.TS_CreateProject_MenuItem.Text = "Создать проект";
             // 
-            // oFDPathFile
+            // TS_OpenProject_MenuItem
             // 
-            this.oFDPathFile.Filter = "Exel файлы|*.xlsx|*.xls|";
-            this.oFDPathFile.Title = "Выбор файла структуры из Windchill";
+            this.TS_OpenProject_MenuItem.Name = "TS_OpenProject_MenuItem";
+            this.TS_OpenProject_MenuItem.Size = new System.Drawing.Size(162, 22);
+            this.TS_OpenProject_MenuItem.Text = "Открыть проект";
             // 
-            // label2
+            // toolStripSeparator1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(502, 251);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(273, 13);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Выберите файл комплектовочной ведомости (*.xlsx):";
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(159, 6);
             // 
-            // txtPathFilePickingList
+            // TS_Quit_MenuItem
             // 
-            this.txtPathFilePickingList.Location = new System.Drawing.Point(502, 271);
-            this.txtPathFilePickingList.Name = "txtPathFilePickingList";
-            this.txtPathFilePickingList.ReadOnly = true;
-            this.txtPathFilePickingList.Size = new System.Drawing.Size(400, 20);
-            this.txtPathFilePickingList.TabIndex = 4;
+            this.TS_Quit_MenuItem.Name = "TS_Quit_MenuItem";
+            this.TS_Quit_MenuItem.Size = new System.Drawing.Size(162, 22);
+            this.TS_Quit_MenuItem.Text = "Выход";
             // 
-            // bDialogSelectPathFilePickingList
+            // MainContainer
             // 
-            this.bDialogSelectPathFilePickingList.Location = new System.Drawing.Point(912, 269);
-            this.bDialogSelectPathFilePickingList.Name = "bDialogSelectPathFilePickingList";
-            this.bDialogSelectPathFilePickingList.Size = new System.Drawing.Size(100, 24);
-            this.bDialogSelectPathFilePickingList.TabIndex = 5;
-            this.bDialogSelectPathFilePickingList.Text = "Выбрать...";
-            this.bDialogSelectPathFilePickingList.UseVisualStyleBackColor = true;
-            this.bDialogSelectPathFilePickingList.Click += new System.EventHandler(this.bDialogSelectPathFilePickingList_Click);
+            this.MainContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MainContainer.Location = new System.Drawing.Point(0, 24);
+            this.MainContainer.Name = "MainContainer";
             // 
-            // bConvert
+            // MainContainer.Panel1
             // 
-            this.bConvert.Location = new System.Drawing.Point(692, 351);
-            this.bConvert.Name = "bConvert";
-            this.bConvert.Size = new System.Drawing.Size(160, 40);
-            this.bConvert.TabIndex = 6;
-            this.bConvert.Text = "Конвертировать";
-            this.bConvert.UseVisualStyleBackColor = true;
-            this.bConvert.Click += new System.EventHandler(this.bConvert_Click);
+            this.MainContainer.Panel1.Controls.Add(this.TreeProduct);
             // 
-            // lblEx
+            // MainContainer.Panel2
             // 
-            this.lblEx.AutoSize = true;
-            this.lblEx.Location = new System.Drawing.Point(502, 421);
-            this.lblEx.Name = "lblEx";
-            this.lblEx.Size = new System.Drawing.Size(0, 13);
-            this.lblEx.TabIndex = 7;
+            this.MainContainer.Panel2.Controls.Add(this.LV_Product);
+            this.MainContainer.Size = new System.Drawing.Size(1604, 857);
+            this.MainContainer.SplitterDistance = 304;
+            this.MainContainer.TabIndex = 1;
+            // 
+            // TreeProduct
+            // 
+            this.TreeProduct.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TreeProduct.Location = new System.Drawing.Point(0, 0);
+            this.TreeProduct.Name = "TreeProduct";
+            this.TreeProduct.Size = new System.Drawing.Size(304, 857);
+            this.TreeProduct.TabIndex = 0;
+            // 
+            // LV_Product
+            // 
+            this.LV_Product.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.CH_Section,
+            this.CH_Position,
+            this.CH_Design,
+            this.CH_Name,
+            this.CH_Quantity,
+            this.CH_Note});
+            this.LV_Product.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LV_Product.GridLines = true;
+            this.LV_Product.HideSelection = false;
+            this.LV_Product.Location = new System.Drawing.Point(0, 0);
+            this.LV_Product.Name = "LV_Product";
+            this.LV_Product.Size = new System.Drawing.Size(1296, 857);
+            this.LV_Product.TabIndex = 0;
+            this.LV_Product.UseCompatibleStateImageBehavior = false;
+            this.LV_Product.View = System.Windows.Forms.View.Details;
+            // 
+            // CH_Section
+            // 
+            this.CH_Section.Text = "Раздел";
+            this.CH_Section.Width = 130;
+            // 
+            // CH_Position
+            // 
+            this.CH_Position.Text = "Поз.";
+            this.CH_Position.Width = 67;
+            // 
+            // CH_Design
+            // 
+            this.CH_Design.Text = "Обозначение";
+            this.CH_Design.Width = 188;
+            // 
+            // CH_Name
+            // 
+            this.CH_Name.Text = "Наименование";
+            this.CH_Name.Width = 163;
+            // 
+            // CH_Quantity
+            // 
+            this.CH_Quantity.Text = "Кол-во";
+            this.CH_Quantity.Width = 82;
+            // 
+            // CH_Note
+            // 
+            this.CH_Note.Text = "Примечание";
+            this.CH_Note.Width = 124;
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1155, 528);
-            this.Controls.Add(this.lblEx);
-            this.Controls.Add(this.bConvert);
-            this.Controls.Add(this.bDialogSelectPathFilePickingList);
-            this.Controls.Add(this.txtPathFilePickingList);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.bDialogSelectPathFileStructureWindchill);
-            this.Controls.Add(this.txtPathFileStructureWindchill);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(1604, 881);
+            this.Controls.Add(this.MainContainer);
+            this.Controls.Add(this.MainMenu);
+            this.MainMenuStrip = this.MainMenu;
             this.Name = "MainForm";
-            this.Text = "Конвертер структуры из Windchill в Exel";
+            this.Text = "Form1";
+            this.MainMenu.ResumeLayout(false);
+            this.MainMenu.PerformLayout();
+            this.MainContainer.Panel1.ResumeLayout(false);
+            this.MainContainer.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.MainContainer)).EndInit();
+            this.MainContainer.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -138,15 +192,20 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtPathFileStructureWindchill;
-        private System.Windows.Forms.Button bDialogSelectPathFileStructureWindchill;
-        private System.Windows.Forms.OpenFileDialog oFDPathFile;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtPathFilePickingList;
-        private System.Windows.Forms.Button bDialogSelectPathFilePickingList;
-        private System.Windows.Forms.Button bConvert;
-        private System.Windows.Forms.Label lblEx;
+        private System.Windows.Forms.MenuStrip MainMenu;
+        private System.Windows.Forms.ToolStripMenuItem TS1_MenuItem;
+        private System.Windows.Forms.ToolStripMenuItem TS_CreateProject_MenuItem;
+        private System.Windows.Forms.ToolStripMenuItem TS_OpenProject_MenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem TS_Quit_MenuItem;
+        private System.Windows.Forms.SplitContainer MainContainer;
+        private System.Windows.Forms.TreeView TreeProduct;
+        private System.Windows.Forms.ListView LV_Product;
+        private System.Windows.Forms.ColumnHeader CH_Position;
+        private System.Windows.Forms.ColumnHeader CH_Design;
+        private System.Windows.Forms.ColumnHeader CH_Section;
+        private System.Windows.Forms.ColumnHeader CH_Name;
+        private System.Windows.Forms.ColumnHeader CH_Quantity;
+        private System.Windows.Forms.ColumnHeader CH_Note;
     }
 }
-
