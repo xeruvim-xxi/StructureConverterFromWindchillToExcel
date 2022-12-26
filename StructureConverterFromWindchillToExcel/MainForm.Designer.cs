@@ -43,6 +43,7 @@
             this.CH_Name = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.CH_Quantity = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.CH_Note = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.конверторToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MainMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MainContainer)).BeginInit();
             this.MainContainer.Panel1.SuspendLayout();
@@ -54,10 +55,12 @@
             // 
             this.MainMenu.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.MainMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.TS1_MenuItem});
+            this.TS1_MenuItem,
+            this.конверторToolStripMenuItem});
             this.MainMenu.Location = new System.Drawing.Point(0, 0);
             this.MainMenu.Name = "MainMenu";
-            this.MainMenu.Size = new System.Drawing.Size(1604, 24);
+            this.MainMenu.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
+            this.MainMenu.Size = new System.Drawing.Size(1069, 24);
             this.MainMenu.TabIndex = 0;
             this.MainMenu.Text = "menuStrip1";
             // 
@@ -69,36 +72,37 @@
             this.toolStripSeparator1,
             this.TS_Quit_MenuItem});
             this.TS1_MenuItem.Name = "TS1_MenuItem";
-            this.TS1_MenuItem.Size = new System.Drawing.Size(63, 20);
+            this.TS1_MenuItem.Size = new System.Drawing.Size(63, 22);
             this.TS1_MenuItem.Text = "Главная";
             // 
             // TS_CreateProject_MenuItem
             // 
             this.TS_CreateProject_MenuItem.Name = "TS_CreateProject_MenuItem";
-            this.TS_CreateProject_MenuItem.Size = new System.Drawing.Size(162, 22);
+            this.TS_CreateProject_MenuItem.Size = new System.Drawing.Size(180, 22);
             this.TS_CreateProject_MenuItem.Text = "Создать проект";
             // 
             // TS_OpenProject_MenuItem
             // 
             this.TS_OpenProject_MenuItem.Name = "TS_OpenProject_MenuItem";
-            this.TS_OpenProject_MenuItem.Size = new System.Drawing.Size(162, 22);
+            this.TS_OpenProject_MenuItem.Size = new System.Drawing.Size(180, 22);
             this.TS_OpenProject_MenuItem.Text = "Открыть проект";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(159, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
             // 
             // TS_Quit_MenuItem
             // 
             this.TS_Quit_MenuItem.Name = "TS_Quit_MenuItem";
-            this.TS_Quit_MenuItem.Size = new System.Drawing.Size(162, 22);
+            this.TS_Quit_MenuItem.Size = new System.Drawing.Size(180, 22);
             this.TS_Quit_MenuItem.Text = "Выход";
             // 
             // MainContainer
             // 
             this.MainContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.MainContainer.Location = new System.Drawing.Point(0, 24);
+            this.MainContainer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MainContainer.Name = "MainContainer";
             // 
             // MainContainer.Panel1
@@ -108,16 +112,18 @@
             // MainContainer.Panel2
             // 
             this.MainContainer.Panel2.Controls.Add(this.LV_Product);
-            this.MainContainer.Size = new System.Drawing.Size(1604, 857);
-            this.MainContainer.SplitterDistance = 304;
+            this.MainContainer.Size = new System.Drawing.Size(1069, 549);
+            this.MainContainer.SplitterDistance = 202;
+            this.MainContainer.SplitterWidth = 3;
             this.MainContainer.TabIndex = 1;
             // 
             // TreeProduct
             // 
             this.TreeProduct.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TreeProduct.Location = new System.Drawing.Point(0, 0);
+            this.TreeProduct.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TreeProduct.Name = "TreeProduct";
-            this.TreeProduct.Size = new System.Drawing.Size(304, 857);
+            this.TreeProduct.Size = new System.Drawing.Size(202, 549);
             this.TreeProduct.TabIndex = 0;
             // 
             // LV_Product
@@ -133,8 +139,9 @@
             this.LV_Product.GridLines = true;
             this.LV_Product.HideSelection = false;
             this.LV_Product.Location = new System.Drawing.Point(0, 0);
+            this.LV_Product.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.LV_Product.Name = "LV_Product";
-            this.LV_Product.Size = new System.Drawing.Size(1296, 857);
+            this.LV_Product.Size = new System.Drawing.Size(864, 549);
             this.LV_Product.TabIndex = 0;
             this.LV_Product.UseCompatibleStateImageBehavior = false;
             this.LV_Product.View = System.Windows.Forms.View.Details;
@@ -169,14 +176,22 @@
             this.CH_Note.Text = "Примечание";
             this.CH_Note.Width = 124;
             // 
+            // конверторToolStripMenuItem
+            // 
+            this.конверторToolStripMenuItem.Name = "конверторToolStripMenuItem";
+            this.конверторToolStripMenuItem.Size = new System.Drawing.Size(78, 22);
+            this.конверторToolStripMenuItem.Text = "Конвертор";
+            this.конверторToolStripMenuItem.Click += new System.EventHandler(this.конверторToolStripMenuItem_Click);
+            // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1604, 881);
+            this.ClientSize = new System.Drawing.Size(1069, 573);
             this.Controls.Add(this.MainContainer);
             this.Controls.Add(this.MainMenu);
             this.MainMenuStrip = this.MainMenu;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "MainForm";
             this.Text = "Form1";
             this.MainMenu.ResumeLayout(false);
@@ -207,5 +222,6 @@
         private System.Windows.Forms.ColumnHeader CH_Name;
         private System.Windows.Forms.ColumnHeader CH_Quantity;
         private System.Windows.Forms.ColumnHeader CH_Note;
+        private System.Windows.Forms.ToolStripMenuItem конверторToolStripMenuItem;
     }
 }

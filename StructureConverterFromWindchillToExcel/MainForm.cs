@@ -16,5 +16,11 @@ namespace StructureConverterFromWindchillToExcel
         {
             InitializeComponent();
         }
+
+        private void конверторToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ConverterForm form = new ConverterForm();
+            form.ShowDialog();
+        }
     }
 }
